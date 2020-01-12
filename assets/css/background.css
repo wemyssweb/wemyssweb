@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 3 Oct 2019, 20:41:02
+    Author     : dalee
+*/
+
+body{
+    background: url("../svg/wemyssweb.svg")#005200 no-repeat fixed;
+    background-size: 100%;
+}
+#wrap{
+    background: url("../svg/wemyssweb_1.svg")#fff no-repeat fixed;
+    background-size: 100%;
+}
+#header,#nav,#main,#aside,
+#main,#comments{
+    padding:0 .5rem;
+}
+#aside{
+    background: url("../svg/wemyssweb3.svg")#eee no-repeat fixed;
+    background-size: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=7, Direction=135, Color=#005200)";/*IE 8*//*FF 3.5+*//*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: 1px 1px 7px 3px rgba(0,82,0,0.5);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=7, Direction=135, Color=#005200); /*IE 5.5-7*/
+}
+#comments{
+    background: url("../svg/wemyssweb.svg")#333333 no-repeat fixed;
+    background-size: 100%;
+    color: #fff;
+
+}
+#footer{
+
+    color: #bbb;
+    background: #222;
+    padding: 1rem;
+}

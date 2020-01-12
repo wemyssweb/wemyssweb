@@ -1,0 +1,169 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 Sep 2019, 11:04:10
+    Author     : dalee
+*/
+a:link {
+    color: #157a3f;
+}
+
+a:visited {
+    color: #128ef0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background: #ff9;
+}
+
+a.more-link {
+    padding-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px dotted #005200;
+}
+
+a:hover.more-link {
+    text-decoration: none;
+}
+#toggle {
+  width: 28px;
+  height: 30px;
+  padding: .5rem;
+  background: #005200;
+  border-radius: 10px;
+  margin:0 0 .5rem 1rem;
+  
+}
+#toggle.on{
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+}
+#toggle div {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#toggle.on .one {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on .two {
+  opacity: 0;
+}
+
+#toggle.on .three {
+  -webkit-transform: rotate(-45deg) translate(7px, -8px);
+          transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#nav{ 
+    margin-left: 1rem;
+    display: none;
+}
+#nav.visable{
+    display: inline-table;
+}
+
+#nav>ul{    
+    display: inline-table;     
+}
+#nav li,#nav-footer li{
+    list-style-type: none;
+     
+   
+}
+#nav a{ 
+    display: block;
+    color: #fff;
+     background: #333;
+    text-decoration: none;
+    padding: .25rem .5rem;
+    font-family: Orbitron,sans-serif;
+    border-bottom: 1px #808080 inset;
+}
+#nav .first a{
+    border-radius: 0 10px 0 0;
+}
+#nav .last a{
+    border-radius: 0 0 10px 10px;
+}
+#nav a:visited{
+    background: #2d2a2a;
+}
+#nav a:active{
+    font-weight: bolder;    
+}
+#nav li a:hover{
+    background: #222;
+}
+#nav .active a,
+#nav .active a:hover,/*Matches active with hover*/
+#nav .active a:visited{ /*Matches active with visited*/   
+    background: #005200;
+}
+#nav-footer{
+    display: inline;
+}
+#nav-footer a + a{
+    border-left: 2px #bbb inset;
+}
+#nav-footer a{   
+    margin-bottom: .5rem;
+    padding: 0 .5rem;
+}
+#nav-footer a:visited {
+    color: #fff;
+}
+
+#nav-footer a:hover {
+    text-decoration: underline;
+}
+
+#nav-footer a:active {
+    color: #ff9;
+    background: #222;
+}
+#copyright{
+   
+}
+#sitemap{
+    
+}
+#privacy-policy{
+    
+}
+#terms-of-use{
+    
+}
+#contact{
+    
+}
+#address{
+    
+}
+#phone{
+    
+}
+#social{
+    
+}
+#signup{
+    
+}
+#login{
+    
+}
