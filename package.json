@@ -23,6 +23,6 @@
         "build:svg": "imagemin assets/svg/* --out-dir assets/dist/assets/svg/",
         "build": "npm run clean && npm run build:css && npm run build:js && npm run build:images && npm run build:svg",
         "postbuild": "shx cp *.html assets/dist",
-        "watch:server": "browser-sync start --server --files **/*.html,assets/**/*, !assets/dist/**/*"
+        "watch:server": "browser-sync start --server --files **/*.html,assets/**/*, !assets/dist/**/* ,!node_modules/"
     }
 }
