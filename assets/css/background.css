@@ -16,10 +16,6 @@ body{
     background: url("../svg/wemyssweb_1.svg")#fff no-repeat fixed;
     background-size: 100%;
 }
-#header,#nav,#main,#aside,
-#main,#comments{
-    padding:0 .5rem;
-}
 #aside{
     background: url("../svg/wemyssweb3.svg")#eee no-repeat fixed;
     background-size: 100%;

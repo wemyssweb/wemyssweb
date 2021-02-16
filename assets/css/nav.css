@@ -38,8 +38,7 @@ a:hover.more-link {
   padding: .5rem;
   background: #005200;
   border-radius: 10px;
-  margin:0 0 .5rem 1rem;
-  
+  margin: 1rem;  
 }
 #toggle.on{
     border-radius: 10px 10px 0 0;
@@ -71,11 +70,11 @@ a:hover.more-link {
 }
 
 #nav{ 
-    margin-left: 1rem;
     display: none;
 }
 #nav.visable{
     display: inline-table;
+    margin-left: 1rem;
 }
 
 #nav>ul{    

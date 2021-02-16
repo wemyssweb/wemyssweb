@@ -9,7 +9,13 @@ and open the template in the editor.
 */
 #wrap{      
     
-    -webkit-box-flex: 1;      
-    
-            flex: 1;    
+    -webkit-box-flex: 1;   
+            flex: 1; 
+        padding-left:0.5rem;
+}
+#aside,#main{
+    padding: 2rem .5rem;
+}
+#main{
+    padding-left: 0;
 }
