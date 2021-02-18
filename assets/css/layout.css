@@ -12,6 +12,6 @@ and open the template in the editor.
     -webkit-box-flex: 1;   
             flex: 1; 
 }
-#aside,#main{
+#aside,#main,#header,#toggle,#nav{
     padding: 2rem .5rem;
 }
