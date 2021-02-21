@@ -1,9 +1,4 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
     Created on : 20 Jul 2019, 12:56:02
     Author     : dalee
 */
@@ -72,7 +67,7 @@ h1 a:active{
     display: inline-table;
     font-style: italic;
 }
-.icon-calendar,.icon-bubble2,.icon-price-tags{
+.icon-calendar,.icon-comment,.icon-tags{
     display: inline-block;
     vertical-align: middle;
     width: 1rem;
@@ -93,3 +88,5 @@ h1 a:active{
     height: 2px;
     background: #005200;
 }
+
+  

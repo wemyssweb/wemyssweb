@@ -116,6 +116,7 @@ a:hover.more-link {
 }
 #nav-footer{
     display: inline;
+    
 }
 #nav-footer a + a{
     border-left: 2px #bbb inset;
@@ -123,6 +124,7 @@ a:hover.more-link {
 #nav-footer a{   
     margin-bottom: .5rem;
     padding: 0 .5rem;
+    color: rgb(243, 243, 159);
 }
 #nav-footer a:visited {
     color: #fff;

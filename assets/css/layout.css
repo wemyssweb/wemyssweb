@@ -7,6 +7,9 @@
     -webkit-box-flex: 1;   
             flex: 1; 
 }
-#aside,#main,#header,#toggle,#nav{
-    padding: 2rem .5rem;
+#aside,#main,#header{
+    padding: 1rem;
+}
+#toggle,#nav ul{
+    margin:0 .5rem;
 }
