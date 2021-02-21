@@ -2,39 +2,55 @@
 <html lang="en">
 
     <head>
+
         <title>Home</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#005200">
+        <meta name="msapplication-TileColor" content="#005200">
+        <meta name="theme-color" content="#ffffff">
+        
+        
+
+
+
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orbitron&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
 
-    <body id="home">
+    <body id="blog">
         <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
     <symbol id="icon-wemyssweb" viewBox="0 0 38 32">
         <title>wemyssweb</title>
         <path d="M37.821 19.32v-6.595l-12.713-12.63v9.050c2.229 2.361 4.591 4.59 6.92 6.852l-6.92 6.902c-1.487-2.372-2.821-4.834-4.248-7.242h-3.891l-4.277 7.355c-2.257-2.397-4.641-4.67-6.95-7.015l6.95-6.902v-8.999l-12.683 12.68v6.545l12.683 12.68 6.208-10.849 6.208 10.849z"></path>
     </symbol>
-    <symbol id="icon-printer" viewBox="0 0 32 32">
-        <title>printer</title>
-        <path d="M8 2h16v4h-16v-4z"></path>
-        <path d="M30 8h-28c-1.1 0-2 0.9-2 2v10c0 1.1 0.9 2 2 2h6v8h16v-8h6c1.1 0 2-0.9 2-2v-10c0-1.1-0.9-2-2-2zM4 14c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM22 28h-12v-10h12v10z"></path>
+    <symbol id="icon-calendar" viewBox="0 0 32 32">
+        <title>calendar</title>
+        <path d="M10 12h4v4h-4zM16 12h4v4h-4zM22 12h4v4h-4zM4 24h4v4h-4zM10 24h4v4h-4zM16 24h4v4h-4zM10 18h4v4h-4zM16 18h4v4h-4zM22 18h4v4h-4zM4 18h4v4h-4zM26 0v2h-4v-2h-14v2h-4v-2h-4v32h30v-32h-4zM28 30h-26v-22h26v22z"></path>
     </symbol>
-    <symbol id="icon-menu" viewBox="0 0 32 32">
-        <title>menu</title>
-        <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+    <symbol id="icon-comment" viewBox="0 0 32 32">
+        <title>comment</title>
+        <path d="M16 6c-1.717 0-3.375 0.271-4.928 0.804-1.46 0.502-2.76 1.211-3.863 2.108-2.069 1.681-3.209 3.843-3.209 6.088 0 1.259 0.35 2.481 1.039 3.63 0.711 1.185 1.781 2.268 3.093 3.133 0.949 0.625 1.587 1.623 1.755 2.747 0.056 0.375 0.091 0.753 0.105 1.129 0.233-0.194 0.461-0.401 0.684-0.624 0.755-0.755 1.774-1.172 2.828-1.172 0.168 0 0.336 0.011 0.505 0.032 0.655 0.083 1.325 0.126 1.99 0.126 1.717 0 3.375-0.271 4.928-0.804 1.46-0.502 2.76-1.211 3.863-2.108 2.069-1.681 3.209-3.843 3.209-6.088s-1.14-4.407-3.209-6.088c-1.104-0.897-2.404-1.606-3.863-2.108-1.553-0.534-3.211-0.804-4.928-0.804zM16 2v0c8.837 0 16 5.82 16 13s-7.163 13-16 13c-0.849 0-1.682-0.054-2.495-0.158-3.437 3.437-7.539 4.053-11.505 4.144v-0.841c2.142-1.049 4-2.961 4-5.145 0-0.305-0.024-0.604-0.068-0.897-3.619-2.383-5.932-6.024-5.932-10.103 0-7.18 7.163-13 16-13z"></path>
     </symbol>
-    <symbol id="icon-mail2" viewBox="0 0 32 32">
-        <title>mail2</title>
-        <path d="M26.667 0h-21.333c-2.934 0-5.334 2.4-5.334 5.334v21.332c0 2.936 2.4 5.334 5.334 5.334h21.333c2.934 0 5.333-2.398 5.333-5.334v-21.332c0-2.934-2.399-5.334-5.333-5.334zM26.667 4c0.25 0 0.486 0.073 0.688 0.198l-11.355 9.388-11.355-9.387c0.202-0.125 0.439-0.198 0.689-0.198h21.333zM5.334 28c-0.060 0-0.119-0.005-0.178-0.013l7.051-9.78-0.914-0.914-7.293 7.293v-19.098l12 14.512 12-14.512v19.098l-7.293-7.293-0.914 0.914 7.051 9.78c-0.058 0.008-0.117 0.013-0.177 0.013h-21.333z"></path>
+    <symbol id="icon-tags" viewBox="0 0 40 32">
+        <title>tags</title>
+        <path d="M38.5 0h-12c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l14.879-14.879c0.583-0.583 1.061-1.736 1.061-2.561v-12c0-0.825-0.675-1.5-1.5-1.5zM31 12c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
+        <path d="M4 17l17-17h-2.5c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l0.939-0.939-13-13z"></path>
     </symbol>
     </defs>
     </svg>
     <div id="wrap">
         <div id="header">
 
-            <h1><span class="avoidwrap"><a href="index.html"><svg id="logo"><use xlink:href="#icon-wemyssweb"</use></svg></a>emyss</span><span class="avoidwrap">Web.net</span></h1>
+            <h1><span class="avoidwrap"><a href="index.html" aria-label="home"><svg aria-hidden="true" id="logo"><title>wemyssweb</title><use xlink:href="#icon-wemyssweb"></use></svg></a>emyss</span><span class="avoidwrap">Web.net</span></h1>
 
         </div>
         <div id="toggle">
@@ -42,28 +58,57 @@
             <div class="two"></div>
             <div class="three"></div>
         </div>
-        <nav id="nav" class="nav-prime" role="navigation">
+        <nav id="nav" role="navigation">
             <ul >
                 <li class="first active"><a  href="index.html">Home</a></li>
                 <li><a href="Blog.html">Blog</a></li>
+                <li><a href="forms.html">Forms</a></li>
                 <li class="last"><a id="contact" href="contact.html">Contact me</a></li>
             </ul>
         </nav>
-        <h2>Simply Responsive</h2>
-        <p>The Goldilocks approach, design for the ideal size, then have a plan for smaller and bigger viewports. So web pages are based on ideal reading width, image sizes and design.
-        </p>
-        <h2>Simply easy to Navigate</h2>
-        <p>You need to find what you want quickly. Easy to read and easy to know where you are by using common conventions, taking into account dissabilities.</p>
-        <h2>Simply fast</h2>
-        <p>We don't like to have to wait, and the more popular you become, the slower your website becomes. So I try to keep things fast though small file size, reducing processing overhead and caching.</p>
+        <div id="content">
+            <div id="main">
+                <h2>Simply Responsive</h2>
+                <p>The Goldilocks approach, design for the ideal size, then have a plan for smaller and bigger viewports. So web pages are based on ideal reading width, image sizes and design.
+                </p>
+                <h2>Simply easy to Navigate</h2>
+                <p>You need to find what you want quickly. Easy to read and easy to know where you are by using common conventions, taking into account dissabilities.</p>
+                <h2>Simply fast</h2>
+                <p>We don't like to have to wait, and the more popular you become, the slower your website becomes. So I try to keep things fast though small file size, reducing processing overhead and caching.</p>
+         
+            </div>
 
+            <div id="aside">
+                <div id="archives">
+                    <h3>Archives</h3>
+                    <a href="">april</a>
+                    <a href="">may</a>
+                    <a href="">june</a>
+                    <a href="">july</a>
+                    <a href="">august</a>
+                    <a href="">september</a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+            </div>
+        </div>
+        <div id="comments">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+        </div>
     </div>
-    <div id="nav-footer">
-        <h2>this is the best footer</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
+    <div id="footer" class="h6">
+        <nav id="nav-footer">
+            <a href="#">first</a>
+            <a href="#">second</a>
+            <a href="#">third</a>
+            <a href="#">fourth</a>
+            <a href="#">fifth</a>                           </nav>
+        <span id="copyright" class="avoidwrap">&copy;2019 wemyssweb.net</span>
     </div>
     <script src="assets/js/jquery-3.4.1.slim.js" type="text/javascript"></script>
     <script src="assets/js/main.js" type="text/javascript"></script>

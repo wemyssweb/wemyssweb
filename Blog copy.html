@@ -3,7 +3,7 @@
 
     <head>
 
-        <title>Blog</title>
+        <title>Contact me</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         
@@ -61,39 +61,27 @@
         <nav id="nav" role="navigation">
             <ul >
                 <li class="first"><a  href="index.html">Home</a></li>
-                <li class="active"><a href="Blog.html">Blog</a></li>
+                <li><a href="Blog.html">Blog</a></li>
                 <li><a href="forms.html">Forms</a></li>
-                <li class="last"><a id="contact" href="contact.html">Contact me</a></li>
+                <li class="last active"><a id="contact" href="contact.html">Contact me</a></li>
             </ul>
         </nav>
         <div id="content">
-            <div id="main">
-                <div class="blog">
-                    <div class="blog-info h6">
-                        <span class="date"><svg aria-hidden="true" class="icon icon-calendar"><title>calender</title><use xlink:href="#icon-calendar"></use></svg> 10 Oct</span>
-                        <span class="comment"><svg aria-hidden="true" class="icon icon-comment"><title>comment</title><use xlink:href="#icon-comment"></use></svg> 20 comments</span>
-                        <span class="tags"><svg aria-hidden="true" class="icon icon-tags"><title>tags</title><use xlink:href="#icon-tags"></use></svg> Tags: css,html</span>
-                    </div>
-                    <h2>Blog Title first</h2>
-
-                    <p>
-                        Morem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <hr>
-                </div>
-                <div class="blog">
-                    <div class="blog-info">
-                        <span class="date"><svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg> 10 Oct</span>
-                        <span class="comment-number"><svg class="icon icon-bubble2"><use xlink:href="#icon-bubble2"></use></svg> 20 comments</span>
-                        <span class="tags"><svg class="icon icon-price-tags"><use xlink:href="#icon-price-tags"></use></svg> Tags: css,html</span>
-                    </div>
-                    <h2>Blog Title second</h2>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <hr>
-                </div>
+            <div id="main">                
+                <form action="action">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your First name..">
+        
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" placeholder="email">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+                    <input id="submit" type="submit" value="Submit">
+        
+                </form>
             </div>
 
             <div id="aside">

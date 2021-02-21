@@ -1,85 +1,156 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<!doctype html>
+<html lang="en">
+
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Forms</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#005200">
+        <meta name="msapplication-TileColor" content="#005200">
+        <meta name="theme-color" content="#ffffff">
+        
+        
+
+
+
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orbitron&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
-    <body>
 
+    <body>
+        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+    <symbol id="icon-wemyssweb" viewBox="0 0 38 32">
+        <title>wemyssweb</title>
+        <path d="M37.821 19.32v-6.595l-12.713-12.63v9.050c2.229 2.361 4.591 4.59 6.92 6.852l-6.92 6.902c-1.487-2.372-2.821-4.834-4.248-7.242h-3.891l-4.277 7.355c-2.257-2.397-4.641-4.67-6.95-7.015l6.95-6.902v-8.999l-12.683 12.68v6.545l12.683 12.68 6.208-10.849 6.208 10.849z"></path>
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 32 32">
+        <title>calendar</title>
+        <path d="M10 12h4v4h-4zM16 12h4v4h-4zM22 12h4v4h-4zM4 24h4v4h-4zM10 24h4v4h-4zM16 24h4v4h-4zM10 18h4v4h-4zM16 18h4v4h-4zM22 18h4v4h-4zM4 18h4v4h-4zM26 0v2h-4v-2h-14v2h-4v-2h-4v32h30v-32h-4zM28 30h-26v-22h26v22z"></path>
+    </symbol>
+    <symbol id="icon-comment" viewBox="0 0 32 32">
+        <title>comment</title>
+        <path d="M16 6c-1.717 0-3.375 0.271-4.928 0.804-1.46 0.502-2.76 1.211-3.863 2.108-2.069 1.681-3.209 3.843-3.209 6.088 0 1.259 0.35 2.481 1.039 3.63 0.711 1.185 1.781 2.268 3.093 3.133 0.949 0.625 1.587 1.623 1.755 2.747 0.056 0.375 0.091 0.753 0.105 1.129 0.233-0.194 0.461-0.401 0.684-0.624 0.755-0.755 1.774-1.172 2.828-1.172 0.168 0 0.336 0.011 0.505 0.032 0.655 0.083 1.325 0.126 1.99 0.126 1.717 0 3.375-0.271 4.928-0.804 1.46-0.502 2.76-1.211 3.863-2.108 2.069-1.681 3.209-3.843 3.209-6.088s-1.14-4.407-3.209-6.088c-1.104-0.897-2.404-1.606-3.863-2.108-1.553-0.534-3.211-0.804-4.928-0.804zM16 2v0c8.837 0 16 5.82 16 13s-7.163 13-16 13c-0.849 0-1.682-0.054-2.495-0.158-3.437 3.437-7.539 4.053-11.505 4.144v-0.841c2.142-1.049 4-2.961 4-5.145 0-0.305-0.024-0.604-0.068-0.897-3.619-2.383-5.932-6.024-5.932-10.103 0-7.18 7.163-13 16-13z"></path>
+    </symbol>
+    <symbol id="icon-tags" viewBox="0 0 40 32">
+        <title>tags</title>
+        <path d="M38.5 0h-12c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l14.879-14.879c0.583-0.583 1.061-1.736 1.061-2.561v-12c0-0.825-0.675-1.5-1.5-1.5zM31 12c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
+        <path d="M4 17l17-17h-2.5c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l0.939-0.939-13-13z"></path>
+    </symbol>
+    </defs>
+    </svg>
     <div id="wrap">
         <div id="header">
 
-            <h1><svg id="logo"><use xlink:href="#icon-wemyssweb"></use></svg><span>emyss</span><span>Web.net</span></h1>
-            <div id="nav">
-                <a href="index.html">Home</a>
-                <a class="current" href="Blog.html">Blog</a>
-                <a id="contact" href="contact.html">Contact me</a>
+            <h1><span class="avoidwrap"><a href="index.html" aria-label="home"><svg aria-hidden="true" id="logo"><title>wemyssweb</title><use xlink:href="#icon-wemyssweb"></use></svg></a>emyss</span><span class="avoidwrap">Web.net</span></h1>
+
+        </div>
+        <div id="toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <nav id="nav" role="navigation">
+            <ul >
+                <li class="first"><a  href="index.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li class="active"><a href="forms.html">Forms</a></li>
+                <li class="last"><a id="contact" href="contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+        <div id="content">
+            <div id="main">
+                <div>
+                    <input type="checkbox" id="checkbox" name="checkbox" value="custom and accessible" checked>
+                    <label for="checkbox">Custom and Accessible</label>
+        
+                    <fieldset>
+                        <legend>What is the question?</legend>
+                        <input type="radio" id="tobe" name="radiobutton" value="Be" checked>
+                        <label for="tobe">To Be</label>
+                        <input type="radio" id="orradio" name="radiobutton" value="Or">
+                        <label for="orradio">Or</label>
+                        <input type="radio" id="nottobe" name="radiobutton" value="Not Be">
+                        <label for="nottobe">Not to Be</label>
+                    </fieldset>
+                </div>
+        <p>I'm experimenting here with including COLS and ROWS attributes (for sizing) or not. And with width/height/min-*/max-* CSS that also impacts sizing. In some browsers (no interop on this), the first two examples can be resized horizontally. In the third example, the horizontal width is locked. Which I like better.</p>
+        
+        <p>Doggo Ipsum? <a href="https://doggoipsum.com">Yes, please</a>.</p>
+        
+        <div class="version1">
+          <label for="textarea1">Thought</label>
+          <textarea id="textarea1" name="thought">Doggo ipsum shoober blop very taste wow wow such tempt, what a nice floof. Thicc puggorino sub woofer floofs fluffer h*ck, long bois you are doin me a concern adorable doggo. You are doin me a concern maximum borkdrive very jealous pupper pupperino, wow such tempt blop such treat ruff, puggo fat boi. Fluffer long doggo long water shoob long bois you are doing me a frighten, noodle horse wrinkler wow such tempt, maximum borkdrive super chub blop. Adorable doggo boofers fluffer borkf long bois wow very biscit maximum borkdrive, smol borking doggo with a long snoot for pats heckin angery woofer h*ck many pats. floofs waggy wags. Boof vvv heckin good boys and girls heckin good boys shoob corgo, shoober borking doggo noodle horse. Wrinkler heck heckin good boys doge sub woofer, wow very biscit noodle horse. Puggo borking doggo yapper shoob, floofs pats.
+        
+        Long water shoob ruff heckin good boys shoober, h*ck puggorino ruff fat boi, heckin angery woofer puggorino. Doing me a frighten smol wrinkler, blep. big ol extremely cuuuuuute big ol. Very taste wow length boy thicc noodle horse, wow such tempt shooberino wrinkler, h*ck puggo. Vvv very taste wow heck yapper the neighborhood pupper doing me a frighten, borking doggo pupper most angery pupper I have ever seen you are doin me a concern. Pupperino he made many woofs long woofer ruff heckin angery woofer long woofer heckin angery woofer, floofs boof ur givin me a spook heckin angery woofer. Maximum borkdrive tungg bork ur givin me a spook, clouds doing me a frighten.
+        
+        Fat boi wow such tempt very hand that feed shibe wrinkler shibe heckin good boys porgo heckin good boys, heckin noodle horse doge fat boi most angery pupper I have ever seen. Heckin good boys and girls such treat ruff tungg, stop it fren sub woofer. you are doing me the shock. Heckin good boys blop h*ck shibe doge, doggo long bois. Very jealous pupper boofers lotsa pats you are doin me a concern fat boi, ur givin me a spook vvv.
+        </textarea>
+        </div>
+        
+        <div class="version2">
+          <label for="textarea2">To Do</label>
+          <textarea id="textarea2" name="todo" cols="30" rows="10">Doggo ipsum shoober blop very taste wow wow such tempt, what a nice floof. Thicc puggorino sub woofer floofs fluffer h*ck, long bois you are doin me a concern adorable doggo. You are doin me a concern maximum borkdrive very jealous pupper pupperino, wow such tempt blop such treat ruff, puggo fat boi. Fluffer long doggo long water shoob long bois you are doing me a frighten, noodle horse wrinkler wow such tempt, maximum borkdrive super chub blop. Adorable doggo boofers fluffer borkf long bois wow very biscit maximum borkdrive, smol borking doggo with a long snoot for pats heckin angery woofer h*ck many pats. floofs waggy wags. Boof vvv heckin good boys and girls heckin good boys shoob corgo, shoober borking doggo noodle horse. Wrinkler heck heckin good boys doge sub woofer, wow very biscit noodle horse. Puggo borking doggo yapper shoob, floofs pats.
+        
+        Long water shoob ruff heckin good boys shoober, h*ck puggorino ruff fat boi, heckin angery woofer puggorino. Doing me a frighten smol wrinkler, blep. big ol extremely cuuuuuute big ol. Very taste wow length boy thicc noodle horse, wow such tempt shooberino wrinkler, h*ck puggo. Vvv very taste wow heck yapper the neighborhood pupper doing me a frighten, borking doggo pupper most angery pupper I have ever seen you are doin me a concern. Pupperino he made many woofs long woofer ruff heckin angery woofer long woofer heckin angery woofer, floofs boof ur givin me a spook heckin angery woofer. Maximum borkdrive tungg bork ur givin me a spook, clouds doing me a frighten.
+        
+        Fat boi wow such tempt very hand that feed shibe wrinkler shibe heckin good boys porgo heckin good boys, heckin noodle horse doge fat boi most angery pupper I have ever seen. Heckin good boys and girls such treat ruff tungg, stop it fren sub woofer. you are doing me the shock. Heckin good boys blop h*ck shibe doge, doggo long bois. Very jealous pupper boofers lotsa pats you are doin me a concern fat boi, ur givin me a spook vvv.
+        </textarea>
+        </div>
+        
+        <div class="version3">
+          <label for="textarea3">Bio</label>
+          <textarea id="textarea3" name="bio">Doggo ipsum shoober blop very taste wow wow such tempt, what a nice floof. Thicc puggorino sub woofer floofs fluffer h*ck, long bois you are doin me a concern adorable doggo. You are doin me a concern maximum borkdrive very jealous pupper pupperino, wow such tempt blop such treat ruff, puggo fat boi. Fluffer long doggo long water shoob long bois you are doing me a frighten, noodle horse wrinkler wow such tempt, maximum borkdrive super chub blop. Adorable doggo boofers fluffer borkf long bois wow very biscit maximum borkdrive, smol borking doggo with a long snoot for pats heckin angery woofer h*ck many pats. floofs waggy wags. Boof vvv heckin good boys and girls heckin good boys shoob corgo, shoober borking doggo noodle horse. Wrinkler heck heckin good boys doge sub woofer, wow very biscit noodle horse. Puggo borking doggo yapper shoob, floofs pats.
+        
+        Long water shoob ruff heckin good boys shoober, h*ck puggorino ruff fat boi, heckin angery woofer puggorino. Doing me a frighten smol wrinkler, blep. big ol extremely cuuuuuute big ol. Very taste wow length boy thicc noodle horse, wow such tempt shooberino wrinkler, h*ck puggo. Vvv very taste wow heck yapper the neighborhood pupper doing me a frighten, borking doggo pupper most angery pupper I have ever seen you are doin me a concern. Pupperino he made many woofs long woofer ruff heckin angery woofer long woofer heckin angery woofer, floofs boof ur givin me a spook heckin angery woofer. Maximum borkdrive tungg bork ur givin me a spook, clouds doing me a frighten.
+        
+        Fat boi wow such tempt very hand that feed shibe wrinkler shibe heckin good boys porgo heckin good boys, heckin noodle horse doge fat boi most angery pupper I have ever seen. Heckin good boys and girls such treat ruff tungg, stop it fren sub woofer. you are doing me the shock. Heckin good boys blop h*ck shibe doge, doggo long bois. Very jealous pupper boofers lotsa pats you are doin me a concern fat boi, ur givin me a spook vvv.
+        </textarea>
+    </div>
+            </div>
+
+            <div id="aside">
+                <div id="archives">
+                    <h3>Archives</h3>
+                    <a href="">april</a>
+                    <a href="">may</a>
+                    <a href="">june</a>
+                    <a href="">july</a>
+                    <a href="">august</a>
+                    <a href="">september</a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
             </div>
         </div>
-        <div>
-            <input type="checkbox" id="checkbox" name="checkbox" value="custom and accessible" checked>
-            <label for="checkbox">Custom and Accessible</label>
+        <div id="comments">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
 
-            <fieldset>
-                <legend>What is the question?</legend>
-                <input type="radio" id="tobe" name="radiobutton" value="Be" checked>
-                <label for="tobe">To Be</label>
-                <input type="radio" id="orradio" name="radiobutton" value="Or">
-                <label for="orradio">Or</label>
-                <input type="radio" id="nottobe" name="radiobutton" value="Not Be">
-                <label for="nottobe">Not to Be</label>
-            </fieldset>
         </div>
-<p>I'm experimenting here with including COLS and ROWS attributes (for sizing) or not. And with width/height/min-*/max-* CSS that also impacts sizing. In some browsers (no interop on this), the first two examples can be resized horizontally. In the third example, the horizontal width is locked. Which I like better.</p>
-
-<p>Doggo Ipsum? <a href="https://doggoipsum.com">Yes, please</a>.</p>
-
-<div class="version1">
-  <label for="textarea1">Thought</label>
-  <textarea id="textarea1" name="thought">Doggo ipsum shoober blop very taste wow wow such tempt, what a nice floof. Thicc puggorino sub woofer floofs fluffer h*ck, long bois you are doin me a concern adorable doggo. You are doin me a concern maximum borkdrive very jealous pupper pupperino, wow such tempt blop such treat ruff, puggo fat boi. Fluffer long doggo long water shoob long bois you are doing me a frighten, noodle horse wrinkler wow such tempt, maximum borkdrive super chub blop. Adorable doggo boofers fluffer borkf long bois wow very biscit maximum borkdrive, smol borking doggo with a long snoot for pats heckin angery woofer h*ck many pats. floofs waggy wags. Boof vvv heckin good boys and girls heckin good boys shoob corgo, shoober borking doggo noodle horse. Wrinkler heck heckin good boys doge sub woofer, wow very biscit noodle horse. Puggo borking doggo yapper shoob, floofs pats.
-
-Long water shoob ruff heckin good boys shoober, h*ck puggorino ruff fat boi, heckin angery woofer puggorino. Doing me a frighten smol wrinkler, blep. big ol extremely cuuuuuute big ol. Very taste wow length boy thicc noodle horse, wow such tempt shooberino wrinkler, h*ck puggo. Vvv very taste wow heck yapper the neighborhood pupper doing me a frighten, borking doggo pupper most angery pupper I have ever seen you are doin me a concern. Pupperino he made many woofs long woofer ruff heckin angery woofer long woofer heckin angery woofer, floofs boof ur givin me a spook heckin angery woofer. Maximum borkdrive tungg bork ur givin me a spook, clouds doing me a frighten.
-
-Fat boi wow such tempt very hand that feed shibe wrinkler shibe heckin good boys porgo heckin good boys, heckin noodle horse doge fat boi most angery pupper I have ever seen. Heckin good boys and girls such treat ruff tungg, stop it fren sub woofer. you are doing me the shock. Heckin good boys blop h*ck shibe doge, doggo long bois. Very jealous pupper boofers lotsa pats you are doin me a concern fat boi, ur givin me a spook vvv.
-</textarea>
-</div>
-
-<div class="version2">
-  <label for="textarea2">To Do</label>
-  <textarea id="textarea2" name="todo" cols="30" rows="10">Doggo ipsum shoober blop very taste wow wow such tempt, what a nice floof. Thicc puggorino sub woofer floofs fluffer h*ck, long bois you are doin me a concern adorable doggo. You are doin me a concern maximum borkdrive very jealous pupper pupperino, wow such tempt blop such treat ruff, puggo fat boi. Fluffer long doggo long water shoob long bois you are doing me a frighten, noodle horse wrinkler wow such tempt, maximum borkdrive super chub blop. Adorable doggo boofers fluffer borkf long bois wow very biscit maximum borkdrive, smol borking doggo with a long snoot for pats heckin angery woofer h*ck many pats. floofs waggy wags. Boof vvv heckin good boys and girls heckin good boys shoob corgo, shoober borking doggo noodle horse. Wrinkler heck heckin good boys doge sub woofer, wow very biscit noodle horse. Puggo borking doggo yapper shoob, floofs pats.
-
-Long water shoob ruff heckin good boys shoober, h*ck puggorino ruff fat boi, heckin angery woofer puggorino. Doing me a frighten smol wrinkler, blep. big ol extremely cuuuuuute big ol. Very taste wow length boy thicc noodle horse, wow such tempt shooberino wrinkler, h*ck puggo. Vvv very taste wow heck yapper the neighborhood pupper doing me a frighten, borking doggo pupper most angery pupper I have ever seen you are doin me a concern. Pupperino he made many woofs long woofer ruff heckin angery woofer long woofer heckin angery woofer, floofs boof ur givin me a spook heckin angery woofer. Maximum borkdrive tungg bork ur givin me a spook, clouds doing me a frighten.
-
-Fat boi wow such tempt very hand that feed shibe wrinkler shibe heckin good boys porgo heckin good boys, heckin noodle horse doge fat boi most angery pupper I have ever seen. Heckin good boys and girls such treat ruff tungg, stop it fren sub woofer. you are doing me the shock. Heckin good boys blop h*ck shibe doge, doggo long bois. Very jealous pupper boofers lotsa pats you are doin me a concern fat boi, ur givin me a spook vvv.
-</textarea>
-</div>
-
-<div class="version3">
-  <label for="textarea3">Bio</label>
-  <textarea id="textarea3" name="bio">Doggo ipsum shoober blop very taste wow wow such tempt, what a nice floof. Thicc puggorino sub woofer floofs fluffer h*ck, long bois you are doin me a concern adorable doggo. You are doin me a concern maximum borkdrive very jealous pupper pupperino, wow such tempt blop such treat ruff, puggo fat boi. Fluffer long doggo long water shoob long bois you are doing me a frighten, noodle horse wrinkler wow such tempt, maximum borkdrive super chub blop. Adorable doggo boofers fluffer borkf long bois wow very biscit maximum borkdrive, smol borking doggo with a long snoot for pats heckin angery woofer h*ck many pats. floofs waggy wags. Boof vvv heckin good boys and girls heckin good boys shoob corgo, shoober borking doggo noodle horse. Wrinkler heck heckin good boys doge sub woofer, wow very biscit noodle horse. Puggo borking doggo yapper shoob, floofs pats.
-
-Long water shoob ruff heckin good boys shoober, h*ck puggorino ruff fat boi, heckin angery woofer puggorino. Doing me a frighten smol wrinkler, blep. big ol extremely cuuuuuute big ol. Very taste wow length boy thicc noodle horse, wow such tempt shooberino wrinkler, h*ck puggo. Vvv very taste wow heck yapper the neighborhood pupper doing me a frighten, borking doggo pupper most angery pupper I have ever seen you are doin me a concern. Pupperino he made many woofs long woofer ruff heckin angery woofer long woofer heckin angery woofer, floofs boof ur givin me a spook heckin angery woofer. Maximum borkdrive tungg bork ur givin me a spook, clouds doing me a frighten.
-
-Fat boi wow such tempt very hand that feed shibe wrinkler shibe heckin good boys porgo heckin good boys, heckin noodle horse doge fat boi most angery pupper I have ever seen. Heckin good boys and girls such treat ruff tungg, stop it fren sub woofer. you are doing me the shock. Heckin good boys blop h*ck shibe doge, doggo long bois. Very jealous pupper boofers lotsa pats you are doin me a concern fat boi, ur givin me a spook vvv.
-</textarea>
-</div>
     </div>
-    <div id="nav-footer">
-        <h2>this is the footer</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
+    <div id="footer" class="h6">
+        <nav id="nav-footer">
+            <a href="#">first</a>
+            <a href="#">second</a>
+            <a href="#">third</a>
+            <a href="#">fourth</a>
+            <a href="#">fifth</a>                           </nav>
+        <span id="copyright" class="avoidwrap">&copy;2019 wemyssweb.net</span>
     </div>
     <script src="assets/js/jquery-3.4.1.slim.js" type="text/javascript"></script>
     <script src="assets/js/main.js" type="text/javascript"></script>
 </body>
+
 </html>
