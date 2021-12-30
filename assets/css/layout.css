@@ -2,14 +2,23 @@
     Created on : 3 Oct 2019, 20:32:01
     Author     : dalee
 */
-#wrap{      
-    
+body{    
     -webkit-box-flex: 1;   
             flex: 1; 
 }
-#aside,#main,#header{
+aside,main,header{
     padding: 1rem;
 }
-#toggle,#nav ul{
+#toggle,nav ul{
     margin:0 .5rem;
+}
+#content{
+    display: flex;
+    flex-wrap: wrap;
+}
+main{
+    flex: 25ch 60ch 70%;
+}
+aside{
+    flex: 1fr 15ch 30%;
 }

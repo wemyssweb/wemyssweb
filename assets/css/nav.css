@@ -69,23 +69,23 @@ a:hover.more-link {
           transform: rotate(-45deg) translate(7px, -8px);
 }
 
-#nav{ 
+nav{ 
     display: none;
 }
-#nav.visable{
+nav.visable{
     display: inline-table;
     margin-left: 1rem;
 }
 
-#nav>ul{    
+nav>ul{    
     display: inline-table;     
 }
-#nav li,#nav-footer li{
+nav li,#nav-footer li{
     list-style-type: none;
      
    
 }
-#nav a{ 
+nav a{ 
     display: block;
     color: #fff;
      background: #333;
@@ -94,24 +94,24 @@ a:hover.more-link {
     font-family: Orbitron,sans-serif;
     border-bottom: 1px #808080 inset;
 }
-#nav .first a{
+nav .first a{
     border-radius: 0 10px 0 0;
 }
-#nav .last a{
+nav .last a{
     border-radius: 0 0 10px 10px;
 }
-#nav a:visited{
+nav a:visited{
     background: #2d2a2a;
 }
-#nav a:active{
+nav a:active{
     font-weight: bolder;    
 }
-#nav li a:hover{
+nav li a:hover{
     background: #222;
 }
-#nav .active a,
-#nav .active a:hover,/*Matches active with hover*/
-#nav .active a:visited{ /*Matches active with visited*/   
+nav .active a,
+nav .active a:hover,/*Matches active with hover*/
+nav .active a:visited{ /*Matches active with visited*/   
     background: #005200;
 }
 #nav-footer{

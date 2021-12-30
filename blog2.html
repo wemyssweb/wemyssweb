@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      box-sizing: border-box;
+      margin: 0;
+      display: grid;      
+      grid-template-rows: auto 1fr auto;
+      gap: 1rem;      
+      height: 100vh;
+      background-color: violet;
+    }
+    .wrap{
+      
+    }
+    header{
+       display: flex;
+       flex-direction: row;
+      background-color: silver;
+      grid-column: 1 / -1;/*width of grid*/
+      padding: 1rem;
+    } 
+    #logo{
+      margin-right: auto;
+      height: 4rem;
+      width: 4rem;
+    }
+    header ul{
+     display: flex;
+      margin-right: auto;
+      gap: .5rem;
+      list-style: none;
+    } 
+    header li{
+      
+    } 
+    main{
+      padding: 1rem;
+      background-color: seagreen;                       
+    }
+    aside{
+      padding: 1rem;
+      background-color: slategrey;               
+    }
+    footer{
+      background-color: tomato;
+      grid-column: 1 / -1;
+      padding: 1rem;
+    }
+    @media only all and (min-width: 70ch){
+      body{
+        grid-template-columns: 1fr minmax(50ch,100ch) minmax(15ch,20ch) 1fr;
+      }
+      main{
+        grid-column: 2/3;
+      }
+      aside{
+        grid-column: 3/4;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <div id="logo"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 105.576 89.327"><path  d="M105.576 53.93V35.52L70.089.265v25.262c6.223 6.59 12.817 12.814 19.318 19.126L70.089 63.921c-4.15-6.622-7.875-13.495-11.857-20.217H47.37L35.43 64.236c-6.301-6.69-12.954-13.036-19.402-19.583L35.43 25.385V.265L.026 35.66v18.27L35.43 89.326l17.33-30.284 17.329 30.284"  fill="#222" /></svg></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="blog2.html">Blog2</a></li>
+      <li><a href="image gallery.html">Gallery</a></li>
+      <li><a href="forms.html">forms</a></li>
+    </ul>
+  </header>
+  
+    <main>main
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis soluta veritatis velit ut magnam. Ea, totam perferendis distinctio asperiores a perspiciatis aliquid nisi vel, quam, atque mollitia enim nostrum fugit quaerat animi quo veniam modi. Maxime iusto unde exercitationem adipisci, fuga excepturi nostrum quam obcaecati repellendus similique autem rem natus reprehenderit iure reiciendis assumenda impedit! Delectus quaerat, et quam aspernatur sunt repellat architecto repudiandae. Fugit ut velit aut incidunt enim animi quas accusantium fuga. Et nam quibusdam ipsum corporis! Ipsam, aliquid. Atque, cumque! Aliquid tenetur illo nemo facere repellat illum quos saepe ducimus quo, eos necessitatibus nisi accusamus facilis!
+    </main>
+    <aside>aside</aside>
+  
+    
+  
+  <footer>footer</footer>
+</body>
+</html>

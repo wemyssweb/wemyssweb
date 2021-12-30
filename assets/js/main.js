@@ -6,5 +6,5 @@
 
 $("#toggle").click(function() {
   $(this).toggleClass("on");
-  $("#nav").toggleClass("visable");
+  $("nav").toggleClass("visable");
 });

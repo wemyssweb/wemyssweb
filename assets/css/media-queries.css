@@ -7,16 +7,16 @@ and open the template in the editor.
     Created on : 28 Sep 2019, 15:59:14
     Author     : dalee
 */
-@media only all and (min-width: 55em){
+@media only all and (min-width: 60em){
 
-    #wrap{
+    #content{
         margin: auto;
-        width: 40em;       
+        width: 60em;       
     }
     #toggle{
         display: none;
     }
-    #nav{   
+    nav{   
         position: -webkit-sticky; /* Safari*/
         position: sticky;
         top: 0;
@@ -24,37 +24,30 @@ and open the template in the editor.
         display: -webkit-box;
         display: flex;
     }
-    #nav li{
+    nav li{
         border-right: 1px solid #bbb;
     }
-    #nav .last{
+    nav .last{
         border-right: none;
     }
-    #nav>ul{    
+    nav>ul{    
         display: -webkit-box;    
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
                 flex-direction: row;    
     }
-    #nav .first a,#nav .first.active a{
+    nav .first a,#nav .first.active a{
         border-radius:0 0 0 10px;  
     }
 
-    #nav .last a{   
+    nav .last a{   
         border-radius:0 10px 0 0;
     } 
     #content{
         display: table;
         table-layout: fixed;
     }
-    #main, #aside{
-        display: table-cell;        
-    }
-    #main{
-        width: 30rem;
-        padding-right: .5rem;       
-    }
-    
+   
     
 }

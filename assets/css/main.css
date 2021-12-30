@@ -13,4 +13,4 @@ and open the template in the editor.
 @import "content.css";
 @import "nav.css";
 @import "forms.css";
-@import "media-queries.css";
+/@import "media-queries.css";

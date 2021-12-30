@@ -9,15 +9,18 @@ and open the template in the editor.
 */
 
 body{
-    background: url("../svg/wemyssweb.svg")#005200 no-repeat fixed;
+    background: url("../svg/wemyssweb.svg") no-repeat fixed, url("../img/1500x500.jpg") fixed;
     background-size: 100%;
 }
-#wrap{
-    background: url("../svg/wemyssweb_1.svg")#fff no-repeat fixed;
+header{
+    
+}
+#content{
+    background: url("../svg/wemyssweb_1.svg")rgba(255, 255, 255, 0.637) no-repeat fixed;
     background-size: 100%;
 }
-#aside{
-    background: url("../svg/wemyssweb3.svg")#eee no-repeat fixed;
+aside{
+    background: url("../svg/wemyssweb3.svg")rgba(238, 238, 238, 0.596) no-repeat fixed;
     background-size: 100%;    
 }
 #comments{
@@ -25,7 +28,7 @@ body{
     background-size: 100%;
     color: #fff;
 }
-#footer{
+footer,nav{
     color: #bbb;
     background: #222;
     padding: 1rem;
