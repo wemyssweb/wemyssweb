@@ -1,34 +1,14 @@
 {
-    "name": "wemyssweb",
-    "version": "1.0.0",
-    "devDependencies": {
-        "@babel/core": "latest",
-        "autoprefixer": "latest",
-        "babelify": "latest",
-        "browser-sync": "latest",
-        "browserify": "latest",
-        "cssnano": "latest",
-        "imagemin-cli": "latest",
-        "postcss": "^8.2.12",
-        "postcss-cli": "latest",
-        "postcss-cssnext": "latest",
-        "postcss-import": "latest",
-        "shx": "latest",
-        "uglify-js": "latest"
-    },
-    "scripts": {
-        "clean": "shx rm -rf build assets/dist && shx echo Done",
-        "build:css": "postcss assets/css/main.css -o assets/dist/assets/css/main.css --no-map",
-        "build:js": "shx mkdir -p assets/dist/assets/js && browserify -t babelify assets/js/main.js | uglifyjs -c -m > assets/dist/assets/js/main.js",
-        "build:images": "imagemin assets/img/* --out-dir assets/dist/assets/img/",
-        "build:svg": "imagemin assets/svg/* --out-dir assets/dist/assets/svg/",
-        "build": "npm run clean && npm run build:css && npm run build:js && npm run build:images && npm run build:svg",
-        "postbuild": "shx cp *.html assets/dist",
-        "watch:server": "browser-sync start --server --files **/*.html,assets/**/*, !assets/dist/**/* ,!node_modules/"
-    },
-    "browserslist": [
-        "> 1%",
-        "last 4 versions",
-        "not dead"
-    ]
+  "name": "wemyssweb",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.0.0"
+  }
 }
